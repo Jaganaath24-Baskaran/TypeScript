@@ -1,0 +1,24 @@
+#homePage
+{
+    display: block;
+}
+#newUserPage
+{
+    display: none;
+}
+#loginPage
+{
+    display: none;
+}
+#coarsePage
+{
+    display: none;
+}
+#availableCoarse
+{
+    display: none;
+}
+#enrolledCoarse
+{
+    display: none;
+}

@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title> Online Coarse Enrollment </title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <script type="text/javascript" src="script/script.js"></script>
+    </head>
+    <body>
+        <div id="homePage">
+            <h2>Home Page</h2>
+            <button type="button" onclick="newUserPage()">New User</button>
+            <button type="button" onclick="existingUserPage()">Existing User</button>
+
+        </div>
+
+        <div id="newUserPage">
+            <h2>Sign Up Page</h2>
+            <label> User Name: </label><br>
+            <input type="text" id="newUserName">
+            <label id="newUserNameMessage"></label><br>
+                
+            <label> User Age: </label><br>
+            <input type="number" id="newUserAge">
+            <label id="newUserAgeMessage"></label><br>
+                
+            <label> User Phone Number: </label><br>
+            <input type="number" id="newUserPhoneNumber">
+            <label id="newUserPhoneNumberMessage"></label><br>
+    
+            <button type="button" onclick="signUp()">Submit</button>
+        </div>
+
+        <div id="loginPage">
+            <h2>Login Page</h2>
+            <label>User ID:</label>
+            <input type="text" id="existingUserId">
+
+            <button type="button" onclick="signIn()">Log-In</button>
+            <label id="availableUser"></label>
+
+        </div>
+
+        <div id="coarsePage">
+            <h2>Welcome To Online Coarse</h2>
+
+            <button type="button" onclick="availableCoarses()">Available Coarses</button>
+            <button type="button" onclick="enrolledCoarses()">Enrolled Coarses</button>
+        </div>
+
+        <div id="availableCoarse">
+            <h3>Select Your Dream Coarse Here</h3>
+            <select name="coarse" id="coarse">
+                <option value="C#">C#</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="TypeScript">TypeScript</option>
+            </select><br><br>
+            <button type="button" onclick="enrol()">Enroll Now</button><br><br>
+
+            <label>Total Days required to complete your Coarse</label><br>
+            <input type="text" id="coarseDays">
+
+        </div>
+
+        <div id="enrolledCoarse">
+            <h3>Enrollment Data</h3>
+            <label>List Of Enrollment</label><br>
+            <input type="text" id="enrolledList"><br>
+
+            <label>Total Days Required</label><br>
+            <input type="text" id="totalDays"><br>
+        </div>
+    </body>
+</html>
